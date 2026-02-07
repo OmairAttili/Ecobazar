@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme{
+    --font-Poppins:"Poppins", sans-serif;
+    --font
+    --color-softPrimary: #84D187;
+    --color-Primary: #00B207;
+    --color-HardPrimary: #2C742F;
+    --color-Warning: #FF8A00;
+    --color-Danger:#EA4B48;
+}
+.container{
+    @apply mx-auto;
+}

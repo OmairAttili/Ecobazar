@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar</title>
+    <!-- Font-Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="./src/css/output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="Navbar">
+        <div class="border-b-[#666666]/20 border-b pb-3">
+        <div class="container">
+            <div class="flex pt-6 max-md:flex-col max-md:gap-3 items-center">
+            <div class="flex items-center justify-start">
+                <div class="flex gap-2">
+                    <img src="./src/img/Header/Map Pin.svg"/>
+                    <p class="text-[#666666] text-[12px] drop-shadow-md font-Poppins max-md:text-[11px]">Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                </div>
+            </div>
+            <div class="flex items-center ml-auto max-md:m-auto">
+                <div class="hover:scale-90 transition-all duration-200">
+                    <button class="flex gap-1.5 cursor-pointer">
+                        <span class="text-[#666666] font-Poppins text-[12px]">Eng</span>
+                        <img src="./src/img/Header/Arrow.svg"/>
+                    </button>
+                </div>
+                <div class="ml-5 mr-10 hover:scale-90 transition-all duration-200">
+                    <button class="flex gap-1.5 cursor-pointer">
+                        <span class="text-[#666666] font-Poppins text-[12px]">USD</span>
+                        <img src="./src/img/Header/Arrow.svg"/>
+                    </button>
+                </div>
+                <div class="hover:scale-90 transition-all duration-200">
+                    <button class="flex gap-1.5 cursor-pointer">
+                        <span class="text-[#666666] font-Poppins text-[12px]">Sign in / Sign Up</span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="py-[27.5px]">
+            <div class="container flex justify-between items-center max-md:flex-col max-md:gap-1">
+                <div>
+                    <img src="./src/img/Header/Logo (1).png"/>
+                </div>
+                <div>
+                    <form class="flex">
+                        <div class="relative flex items-center border-[#808080]/15 border-2 w-100 h-11.25 rounded-md max-lg:hidden">
+                            <img src="./src/img/Header/search.svg" class="absolute top-3.5 left-[12.5px]"/>
+                            <input type="text" placeholder="Search" class="w-[89%] h-full ml-11 outline-0">
+                            <button type="submit" class="text-white bg-Primary w-24.5 h-11.25 rounded-r-md cursor-pointer hover:bg-Primary/75 transition-all duration-300 hover:scale-105">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="flex items-center max-md:gap-2">
+                    <button class="cursor-pointer hover:scale-105 transition-all duration-100 max-md:size-6 md:hidden">
+                    <img src="./src/img/Header/search.svg"/>
+                    </button>
+                    <button class="cursor-pointer hover:scale-105 transition-all duration-100 max-md:size-6">
+                        <img src="./src/img/Header/heart.svg"/>
+                    </button>
+                    <div class="ml-4 mr-2.5 max-md:hidden">
+                        <img src="./src/img/Header/Devider.svg"/>
+                    </div>
+                    <button class="mr-3 cursor-pointer hover:scale-105 transition-all duration-100 max-md:size-6">
+                        <img src="./src/img/Header/Cart.png"/>
+                    </button>
+                    <div class="border">
+                        <div><span class="text-[#4D4D4D] font-Poppins text-[11px]">Shopping cart:</span></div>
+                        <div><span>$57.00</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#333333] py-[19.5px]">
+            <div class="container flex justify-between">
+                <ul class="flex gap-8 max-md:hidden">
+                    <li class="flex gap-1 hover:scale-90 transition-all items-center">
+                        <a href="#" class="text-white font-Poppins text-[14px] font-medium ">Home</a>
+                        <img src="./src/img/Header/WhiteArrow.svg"/>
+                    </li>
+                    <li class="flex gap-1 hover:scale-90 transition-all items-center">
+                        <a href="#" class="text-[#999999] font-Poppins text-[14px] font-medium ">Shop</a>
+                        <img src="./src/img/Header/GrayArrow.svg"/>
+                    </li>
+                    <li class="flex gap-1 hover:scale-90 transition-all items-center">
+                        <a href="#" class="text-[#999999] font-Poppins text-[14px] font-medium ">Pages</a>
+                        <img src="./src/img/Header/GrayArrow.svg"/>
+                    </li>
+                    <li class="flex gap-1 hover:scale-90 transition-all items-center">
+                        <a href="#" class="text-[#999999] font-Poppins text-[14px] font-medium ">Blog</a>
+                        <img src="./src/img/Header/GrayArrow.svg" class="size-min"/>
+                    </li>
+                    <li class="flex hover:scale-90 transition-all items-center">
+                        <a href="#" class="text-[#999999] font-Poppins text-[14px] font-medium ">About Us</a>
+                    </li>
+                    <li class="flex hover:scale-90 transition-all items-center">
+                        <a href="#" class="text-[#999999] font-Poppins text-[14px] font-medium ">Contact Us</a>
+                    </li>
+                </ul>
+                     <button class="md:hidden text-white pl-5 cursor-pointer hover:scale-90 transition-all">
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </button>
+                <div class="flex max-md:ml-auto max-md:pr-5">
+                    <button class="flex gap-[11.53px] items-center cursor-pointer hover:scale-90 transition-all">
+                        <img src="./src/img/Header/PhoneCall 1.svg"/>
+                        <p class="text-white font-Poppins text-[14px] font-medium">(219) 555-0114</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
