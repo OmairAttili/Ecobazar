@@ -9,7 +9,7 @@
     --color-Danger:#EA4B48;
 }
 .container{
-    @apply mx-auto;
+     @apply mx-auto;
 }
 body{
 @apply font-Poppins
