@@ -7,9 +7,10 @@
     --color-HardPrimary: #2C742F;
     --color-Warning: #FF8A00;
     --color-Danger:#EA4B48;
+    --color-Muted:#666666;
 }
 .container{
-     @apply mx-auto;
+     @apply mx-auto max-w-6xl;
 }
 body{
 @apply font-Poppins

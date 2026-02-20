@@ -118,6 +118,7 @@
             </div>
         </div>
     </header>
+   
     <section class="Services pt-8.5">
         <div class="container py-10 bg-white rounded-2xl shadow-xl grid grid-cols-4 gap-6 justify-items-center max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-3 max-lg:grid-cols-2">
             <div class="flex gap-3 items-center justify-start max-w-xs">
@@ -152,10 +153,10 @@
     </section>
     <section class="categories pt-12.5 pb-15">
         <div class="container">
-            <div class="flex justify-between ">
-                <h2 class="font-semibold md:text-4xl sm:text-3xl max-sm:text-2xl">Popular Categories</h2>
+            <div class="flex justify-between max-sm:px-2">
+                <h2 class="font-semibold md:text-4xl sm:text-3xl max-sm:text-lg">Popular Categories</h2>
                 <button class="flex gap-3 items-center text-Primary cursor-pointer hover:scale-95 transition-all hover:text-Primary/65 ">
-                    <span class="font-medium">View All</span>
+                    <span class="font-medium max-sm:text-sm">View All</span>
                     <img src="./src/img/Categories/Arrow.svg" class="w-3.75 h-3"/>
                 </button>
             </div>
@@ -212,12 +213,12 @@
             </div>
         </div>
     </section>
-    <section class="Products pb-15">
+    <section class="Products pb-15 max-sm:px-2">
         <div class="container">
         <div class="flex justify-between">
-                <h2 class="font-semibold md:text-4xl sm:text-3xl max-sm:text-2xl">Popular Products</h2>
+                <h2 class="font-semibold md:text-4xl sm:text-3xl max-sm:text-lg">Popular Products</h2>
                 <button class="flex gap-3 items-center text-Primary cursor-pointer hover:scale-95 transition-all hover:text-Primary/65 ">
-                    <span class="font-medium">View All</span>
+                    <span class="font-medium max-sm:text-sm">View All</span>
                     <img src="./src/img/Categories/Arrow.svg" class="w-3.75 h-3"/>
                 </button>
             </div>  
@@ -406,6 +407,49 @@
                 </div>
             </div>    
           </div>
+    </section>
+    <section class="SpecialOffers pb-30">
+        <div class="container flex justify-center gap-6 items-center max-md:flex-col">
+            <div class="bg-[url(./img/Offers/Sale-of-the-month.png)] h-134 flex flex-col w-106 max-sm:w-75 rounded-lg">
+                <div class="mt-8.75 text-center flex flex-col items-center">
+                    <span class="font-medium text-sm text-white mb-4">Best Deals</span>
+                    <h2 class="text-white font-semibold text-[40px] mb-2">Sale of the Month</h2>
+                    <img src="./src/img/Offers/Timer.svg" class="mb-6"/>
+                    <button type="button" class="bg-white py-4 px-10 rounded-full flex gap-4 cursor-pointer hover:opacity-90 hover:scale-95 transition-all items-center">
+                                <span class="text-Primary font-semibold">Shop now</span>
+                                <img src="./src/img/Hero/Arrow.svg"/>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-[url(./img/Offers/Low-Fat-Meat.png)] h-134 flex flex-col w-106 max-sm:w-75 rounded-lg">
+                <div class="mt-8.75 text-center flex flex-col items-center">
+                    <span class="font-medium text-sm text-white mb-4">85% Fat Free</span>
+                    <h2 class="text-white font-semibold text-[40px] mb-[12.5px]">Low-Fat Meat</h2>
+                    <div class="mb-7 flex gap-2 items-center">
+                        <span class="text-white text-lg">Started at</span>
+                        <span class="text-Warning">$79.99</span>
+                    </div>
+                    <button type="button" class="bg-white py-4 px-10 rounded-full flex gap-4 cursor-pointer hover:opacity-90 hover:scale-95 transition-all items-center">
+                                <span class="text-Primary font-semibold">Shop now</span>
+                                <img src="./src/img/Hero/Arrow.svg"/>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-[url(./img/Offers/100%-Fresh-Fruit.png)] h-134 flex flex-col w-106 max-sm:w-75 rounded-lg">
+                <div class="mt-8.75 text-center flex flex-col items-center">
+                    <span class="font-medium text-sm mb-4">Summer Sale</span>
+                    <h2 class="text-[#1A1A1A] font-semibold text-[40px] mb-2">100% Fresh Fruit</h2>
+                    <div class="mb-6 flex gap-2 items-center">
+                        <span>Up to</span>
+                        <span class="text-[#FCC900] bg-[#1A1A1A] px-3 py-1.5 rounded-md">64% OFF</span>
+                    </div>
+                    <button type="button" class="bg-white py-4 px-10 rounded-full flex gap-4 cursor-pointer hover:opacity-90 hover:scale-95 transition-all items-center">
+                                <span class="text-Primary font-semibold">Shop now</span>
+                                <img src="./src/img/Hero/Arrow.svg"/>
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
