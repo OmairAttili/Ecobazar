@@ -12,7 +12,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
-    --container-7xl: 80rem;
+    --container-5xl: 64rem;
+    --container-6xl: 72rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -246,9 +247,6 @@
       max-width: 96rem;
     }
   }
-  .m-auto {
-    margin: auto;
-  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -354,6 +352,12 @@
   }
   .h-89\.5 {
     height: calc(var(--spacing) * 89.5);
+  }
+  .h-123 {
+    height: calc(var(--spacing) * 123);
+  }
+  .h-123\.5 {
+    height: calc(var(--spacing) * 123.5);
   }
   .h-134 {
     height: calc(var(--spacing) * 134);
@@ -590,6 +594,9 @@
   }
   .bg-\[url\(\.\/img\/Offers\/100\%-Fresh-Fruit\.png\)\] {
     background-image: url(./img/Offers/100%-Fresh-Fruit.png);
+  }
+  .bg-\[url\(\.\/img\/Offers\/Fresh-Fruit\.png\)\] {
+    background-image: url(./img/Offers/Fresh-Fruit.png);
   }
   .bg-\[url\(\.\/img\/Offers\/Low-Fat-Meat\.png\)\] {
     background-image: url(./img/Offers/Low-Fat-Meat.png);
@@ -915,11 +922,6 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
-  .max-lg\:grid {
-    @media (width < 64rem) {
-      display: grid;
-    }
-  }
   .max-lg\:hidden {
     @media (width < 64rem) {
       display: none;
@@ -930,6 +932,16 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .max-lg\:grid-cols-3 {
+    @media (width < 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .max-lg\:gap-6 {
+    @media (width < 64rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .max-md\:m-auto {
     @media (width < 48rem) {
       margin: auto;
@@ -938,11 +950,6 @@
   .max-md\:ml-auto {
     @media (width < 48rem) {
       margin-left: auto;
-    }
-  }
-  .max-md\:flex {
-    @media (width < 48rem) {
-      display: flex;
     }
   }
   .max-md\:hidden {
@@ -961,11 +968,6 @@
       width: calc(var(--spacing) * 106);
     }
   }
-  .max-md\:w-\[424px\] {
-    @media (width < 48rem) {
-      width: 424px;
-    }
-  }
   .max-md\:grid-cols-1 {
     @media (width < 48rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -979,16 +981,6 @@
   .max-md\:flex-col {
     @media (width < 48rem) {
       flex-direction: column;
-    }
-  }
-  .max-md\:items-center {
-    @media (width < 48rem) {
-      align-items: center;
-    }
-  }
-  .max-md\:justify-center {
-    @media (width < 48rem) {
-      justify-content: center;
     }
   }
   .max-md\:gap-1 {
@@ -1021,49 +1013,14 @@
       margin: auto;
     }
   }
-  .max-sm\:w-3 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 3);
-    }
-  }
   .max-sm\:w-50 {
     @media (width < 40rem) {
       width: calc(var(--spacing) * 50);
     }
   }
-  .max-sm\:w-70 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 70);
-    }
-  }
-  .max-sm\:w-72 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 72);
-    }
-  }
-  .max-sm\:w-73 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 73);
-    }
-  }
   .max-sm\:w-75 {
     @media (width < 40rem) {
       width: calc(var(--spacing) * 75);
-    }
-  }
-  .max-sm\:w-90 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 90);
-    }
-  }
-  .max-sm\:w-100 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 100);
-    }
-  }
-  .max-sm\:w-300 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 300);
     }
   }
   .max-sm\:grid-cols-1 {
@@ -1162,10 +1119,15 @@
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
+  .lg\:grid-cols-11 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(11, minmax(0, 1fr));
+    }
+  }
 }
 .container {
   margin-inline: auto;
-  max-width: var(--container-7xl);
+  max-width: var(--container-6xl);
 }
 body {
   font-family: var(--font-Poppins);
