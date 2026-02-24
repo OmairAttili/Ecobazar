@@ -208,6 +208,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -249,6 +252,9 @@
   }
   .left-\[12\.5px\] {
     left: 12.5px;
+  }
+  .z-10 {
+    z-index: 10;
   }
   .col-span-2 {
     grid-column: span 2 / span 2;
@@ -825,6 +831,15 @@
   }
   .border-gray-200 {
     border-color: var(--color-gray-200);
+  }
+  .border-b-Muted {
+    border-bottom-color: var(--color-Muted);
+  }
+  .border-b-Muted\/20 {
+    border-bottom-color: color-mix(in srgb, #666666 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-Muted) 20%, transparent);
+    }
   }
   .border-b-\[\#666666\]\/20 {
     border-bottom-color: color-mix(in oklab, #666666 20%, transparent);
