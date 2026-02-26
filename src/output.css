@@ -1968,6 +1968,11 @@
       justify-content: center;
     }
   }
+  .max-sm\:gap-2 {
+    @media (width < 40rem) {
+      gap: calc(var(--spacing) * 2);
+    }
+  }
   .max-sm\:gap-3 {
     @media (width < 40rem) {
       gap: calc(var(--spacing) * 3);
@@ -2199,6 +2204,11 @@
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
     }
   }
   .md\:flex-row {
