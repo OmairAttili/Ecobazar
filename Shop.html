@@ -84,7 +84,7 @@
             <div class="container flex justify-between">
                 <ul class="flex gap-8 max-md:hidden">
                     <li class="flex gap-1 hover:scale-95 transition-all duration-200 items-center">
-                        <a href="#" class="text-white  text-[14px] font-medium ">Home</a>
+                        <a href="./index.html" class="text-white  text-[14px] font-medium ">Home</a>
                         <img src="./src/img/Header/WhiteArrow.svg"/>
                     </li>
                     <li class="flex gap-1 hover:scale-95 transition-all duration-200 items-center">
@@ -166,6 +166,65 @@
                 <span class="text-lg sm:text-2xl font-semibold">56%</span>
                 <span class="font-medium text-xs">OFF</span>
              </div>
+        </div>
+    </div>
+</section>
+<section class="Filter-Bar pb-6">
+    <div class="pb-6">
+    <div class="container flex justify-between max-lg:flex-col max-lg:gap-4 max-xl:px-4">
+        <div class="flex gap-4 items-center max-lg:justify-center max-md:flex-wrap">
+            <form class="w-44.5 h-10.25 border border-gray-300 flex justify-start items-center rounded-md text-[#4D4D4D] text-sm">
+                <select class="outline-0 pr-6 pl-2">
+                    <option>Select Category</option>
+                </select>
+            </form>
+            <form class="w-44.5 h-10.25 border border-gray-300 flex justify-start items-center rounded-md text-[#4D4D4D] text-sm">
+                <select class="outline-0 pr-13 pl-2">
+                    <option>Select Price</option>
+                </select>
+            </form>
+            <form class="w-44.5 h-10.25 border border-gray-300 flex justify-start items-center rounded-md text-[#4D4D4D] text-sm">
+                <select class="outline-0 pr-11 pl-2">
+                    <option>Select Rating</option>
+                </select>
+            </form>
+        </div>
+        <div class="flex gap-4 items-center max-lg:justify-center max-md:flex-wrap">
+            <form class="w-44.5 h-10.25 border border-gray-300 flex justify-start items-center rounded-md text-[#4D4D4D] text-sm">
+                <select class="outline-0 pr-10 pl-2">
+                    <option>Sort by: Latest</option>
+                </select>
+            </form>
+            <form class="w-44.5 h-10.25 border border-gray-300 flex justify-start items-center rounded-md text-[#4D4D4D] text-sm">
+                <select class="outline-0 pr-20 pl-2">
+                    <option>Show: 16</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="border-[1.5px] py-4 max-xl:px-4">
+        <div class="container flex justify-between max-sm:flex-col max-sm:gap-4">
+            <div class="flex items-center gap-6 max-sm:justify-center">
+                <span class="text-[#808080] text-sm">Active Filters:</span>
+                <div class="flex gap-2 items-center">
+                    <span class="font-medium text-sm">Wing Chair</span>
+                    <button type="reset" class="cursor-pointer">
+                        <img src="./src/img/Filter-Bar/Gray x.svg"/>
+                    </button>
+                </div>
+                <div class="flex gap-4 relative">
+                    <span class="font-medium text-sm">Min $300 - Max 500</span>
+                    <button type="reset" class="cursor-pointer">
+                        <img src="./src/img/Filter-Bar/X.svg"/>
+                        <img src="./src/img/Filter-Bar/Hand.svg" class="absolute -right-2.25 -bottom-2.25 cursor-pointer"/>
+                    </button>
+                </div>
+            </div>
+            <div class="flex gap-2 max-sm:justify-center">
+                <span class="font-medium text-sm">2,547</span>
+                <span class="text-[#808080] text-sm">Results found.</span>
+            </div>
         </div>
     </div>
 </section>
