@@ -10,7 +10,7 @@
     --color-Muted:#666666;
 }
 .container{
-     @apply mx-auto max-w-6xl;
+     @apply mx-auto xl:max-w-6xl 2xl:max-w-7xl;
 }
 body{
 @apply font-Poppins;
