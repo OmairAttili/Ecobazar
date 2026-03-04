@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @theme{
     --font-Poppins:"Poppins", sans-serif;
-    --font
+    --font-Dancing-Script:"Dancing Script";
     --color-softPrimary: #84D187;
     --color-Primary: #00B207;
     --color-HardPrimary: #2C742F;
@@ -10,7 +10,7 @@
     --color-Muted:#666666;
 }
 .container{
-     @apply mx-auto xl:max-w-6xl 2xl:max-w-7xl;
+     @apply mx-auto ;
 }
 body{
 @apply font-Poppins;
