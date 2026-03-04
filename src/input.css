@@ -10,7 +10,7 @@
     --color-Muted:#666666;
 }
 .container{
-     @apply mx-auto ;
+     @apply mx-auto;
 }
 body{
 @apply font-Poppins;
