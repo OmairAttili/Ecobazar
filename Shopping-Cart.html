@@ -137,23 +137,23 @@
         <h2 class="font-semibold text-[32px] text-center mb-8">My Shopping Cart</h2>
         <div class="flex justify-center gap-6 max-lg:flex-col">
             <div class="flex flex-col gap-6 w-full">
-                <div>
+                <div class="max-sm:hidden">
                     <table class="border border-[#E6E6E6] w-full">
-                        <thead class="w-full flex items-center justify-between pl-5 pr-24 h-11.5 mb-3 border-b border-[#E6E6E6]">
-                            <tr class="w-full flex justify-between">
+                        <thead class="w-full flex items-center h-11.5 mb-3 border-b border-[#E6E6E6]">
+                            <tr class="w-full flex justify-evenly">
                                 <td class="text-[#808080] text-sm uppercase">Product</td>
-                                    <td class="text-[#808080] text-sm uppercase">price</td>
+                                    <td class="text-[#808080] text-sm uppercase md:ml-13 max-md:ml-20 xl:ml-0">price</td>
                                     <td class="text-[#808080] text-sm uppercase">Quantity</td>
                                     <td class="text-[#808080] text-sm uppercase">Subtotal</td>
                             </tr>
                         </thead>
                         <tbody class="flex flex-col">
-                            <tr class="border-b border-[#E6E6E6] flex items-center justify-between w-full">
-                                <td class="flex items-center gap-3">
+                            <tr class="border-b border-[#E6E6E6] flex items-center justify-between 2xl:ml-7">
+                                <td class="flex items-center">
                                      <img src="./src/img/Products/Green Capsicum (4).png"/>
                                      <span>Green Capsicum</span>
                                 </td>
-                                    <td>
+                                    <td class="w-fit">
                                         <span>$14.00</span>
                                     </td>
                                     <td>
@@ -178,7 +178,7 @@
                                </button>
                             </td>
                             </tr>
-                            <tr class="border-b border-[#E6E6E6] flex items-center justify-between w-full">
+                            <tr class="border-b border-[#E6E6E6] flex items-center justify-between 2xl:ml-7">
                                 <td class="flex items-center gap-3">
                                      <img src="./src/img/Products/Red Capsicum.png"/>
                                      <span>Red Capsicum</span>
@@ -221,6 +221,82 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="flex flex-col justify-center gap-4 sm:hidden">
+                    <div class="flex items-start shadow-md border rounded-md py-8 justify-between border-Muted">
+                        <img src="./src/img/Products/Green Capsicum (4).png"/>
+                        <div class="flex flex-col gap-4 w-full">
+                            <div class="flex items-center justify-between border-b border-gray-400 pb-3">
+                                <span class="font-medium">Green Capsicum</span>
+                                <button type="reset" class="border border-[#CCCCCC] rounded-full size-6 flex items-center justify-center mr-5 cursor-pointer hover:bg-Primary/25 duration-200 delay-100">
+                                      <i class="fa-solid fa-x fa-xs text-Muted"></i>
+                               </button>
+                            </div>
+                            <div class="flex items-center justify-between pr-3 border-b border-gray-400 pb-3">
+                                <span class="font-medium">price :</span>
+                                <span class="font-medium">$14.00</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-gray-400 pb-3">
+                                <span class="font-medium">Quantity :</span>
+                                <div class="flex items-center justify-center border border-[#E5E5E5] rounded-full h-12.5">
+                                    <button class="size-8.5 rounded-full bg-[#F2F2F2] flex items-center justify-center cursor-pointer hover:bg-Primary/40 transition-all duration-200 hover:scale-95">
+                                        <img src="./src/img/Product-Details/Minus.svg"/>
+                                    </button>
+                                    <div class="w-10 h-6 flex justify-center items-center">
+                                        <span>5</span>
+                                    </div>
+                                    <button class="size-8.5 rounded-full bg-[#F2F2F2] flex items-center justify-center cursor-pointer hover:bg-Primary/40 transition-all duration-200 hover:scale-95">
+                                        <img src="./src/img/Product-Details/Plus-icon.svg"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between pr-3 border-b border-gray-400 pb-3">
+                                <span class="font-medium">Subtotal</span>
+                                <span class="font-medium">$70.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start shadow-md border rounded-md py-8 justify-between border-Muted">
+                        <img src="./src/img/Products/Red Capsicum.png"/>
+                        <div class="flex flex-col gap-4 w-full">
+                            <div class="flex items-center justify-between border-b border-gray-400 pb-3">
+                                <span class="font-medium">Red Capsicum</span>
+                                <button type="reset" class="border border-[#CCCCCC] rounded-full size-6 flex items-center justify-center mr-5 cursor-pointer hover:bg-Primary/25 duration-200 delay-100">
+                                      <i class="fa-solid fa-x fa-xs text-Muted"></i>
+                               </button>
+                            </div>
+                            <div class="flex items-center justify-between pr-3 border-b border-gray-400 pb-3">
+                                <span class="font-medium">price :</span>
+                                <span class="font-medium">$14.00</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-gray-400 pb-3">
+                                <span class="font-medium">Quantity :</span>
+                                <div class="flex items-center justify-center border border-[#E5E5E5] rounded-full h-12.5">
+                                    <button class="size-8.5 rounded-full bg-[#F2F2F2] flex items-center justify-center cursor-pointer hover:bg-Primary/40 transition-all duration-200 hover:scale-95">
+                                        <img src="./src/img/Product-Details/Minus.svg"/>
+                                    </button>
+                                    <div class="w-10 h-6 flex justify-center items-center">
+                                        <span>5</span>
+                                    </div>
+                                    <button class="size-8.5 rounded-full bg-[#F2F2F2] flex items-center justify-center cursor-pointer hover:bg-Primary/40 transition-all duration-200 hover:scale-95">
+                                        <img src="./src/img/Product-Details/Plus-icon.svg"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between pr-3 border-b border-gray-400 pb-3">
+                                <span class="font-medium">Subtotal</span>
+                                <span class="font-medium">$14.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-center">
+                     <button type="button" class="w-full h-11.25 bg-[#F2F2F2] rounded-full cursor-pointer hover:bg-Primary/20 hover:border hover:scale-95 transition-all delay-100 duration-500">
+                         <span class="text-sm font-semibold text-[#4D4D4D]">Return to shop</span>
+                     </button>
+                     <button type="button" class="w-full h-11.25 bg-[#F2F2F2] rounded-full cursor-pointer hover:bg-Primary/20 hover:border hover:scale-95 transition-all delay-100 duration-500">
+                         <span class="text-sm font-semibold text-[#4D4D4D]">Update Cart</span>
+                     </button>
+                    </div>
+                </div>
                 <div class="border border-[#E5E5E5] rounded-md h-23 flex items-center gap-6 p-5 max-sm:flex-col max-sm:h-full">
                     <div class="flex gap-2">
                         <span class="text-xl font-medium">Coupon</span>
@@ -229,7 +305,7 @@
                     <div class="border border-[#E6E6E6] rounded-full h-13 w-full">
                         <form class="pl-6 h-13 flex justify-between w-full">
                             <input placeholder="Enter code" class="outline-0 size-full"/>
-                            <button class="text-white bg-black rounded-full w-49 flex items-center justify-center font-semibold cursor-pointer hover:bg-Primary transition-all duration-500 hover:text-sm delay-75">Apply Coupon</button>
+                            <button class="text-white bg-black rounded-full w-49 flex items-center justify-center font-semibold cursor-pointer hover:bg-Primary transition-all duration-500 hover:text-sm delay-75 max-sm:text-sm">Apply Coupon</button>
                         </form>
                     </div>
                 </div>
