@@ -672,6 +672,9 @@
   .w-\[35\%\] {
     width: 35%;
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
   .w-\[89\%\] {
     width: 89%;
   }
@@ -1935,6 +1938,11 @@
       margin: auto;
     }
   }
+  .max-sm\:flex {
+    @media (width < 40rem) {
+      display: flex;
+    }
+  }
   .max-sm\:hidden {
     @media (width < 40rem) {
       display: none;
@@ -1989,6 +1997,11 @@
   .max-sm\:w-\[2px\] {
     @media (width < 40rem) {
       width: 2px;
+    }
+  }
+  .max-sm\:w-\[50\%\] {
+    @media (width < 40rem) {
+      width: 50%;
     }
   }
   .max-sm\:w-\[280px\] {
