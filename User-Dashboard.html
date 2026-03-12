@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar</title>
+    <!--  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="font-Poppin">
+<header class="Navbar pb-8">
+        <div class="bg-black h-10.5 flex items-center max-md:h-15">
+        <div class="container">
+            <div class="flex max-md:flex-col max-md:gap-3 text-[#B3B3B3] max-md:items-center">
+            <div class="flex items-center justify-start">
+                <div class="flex gap-2">
+                    <img src="./src/img/Header/Map Pin (1).svg"/>
+                    <p class="text-[12px] drop-shadow-md  max-md:text-[11px]">Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 ml-auto max-md:m-auto">
+                <div class="hover:scale-90 transition-all duration-200">
+                    <button class="flex gap-1.5 cursor-pointer">
+                        <span class="text-xs">Eng</span>
+                        <img src="./src/img/Header/Down-Arrow.svg"/>
+                    </button>
+                </div>
+                <div class="hover:scale-90 transition-all duration-200">
+                    <button class="flex gap-1.5 cursor-pointer">
+                        <span class="text-xs">USD</span>
+                        <img src="./src/img/Header/Down-Arrow.svg"/>
+                    </button>
+                </div>
+                <span>|</span>
+                <div class="hover:scale-90 transition-all duration-300">
+                    <button class="cursor-pointer">
+                        <span class="text-xs">Sign in / Sign Up</span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="py-6 border-b border-[#CCCCCC]">
+            <div class="container flex justify-between items-center max-md:flex-col max-md:gap-1">
+                    <img src="./src/img/Header/Logo (1).svg"/>
+                <div>
+                    <form class="flex">
+                        <div class="relative flex items-center border-[#808080]/15 border-2 w-125 h-11.25 rounded-md max-lg:hidden outline-0">
+                            <img src="./src/img/Header/search.svg" class="absolute top-3.5 left-[12.5px]"/>
+                            <input type="text" placeholder="Search" class="w-full h-11.25 ml-11 border-0 outline-0">
+                            <button type="submit" class="text-white bg-Primary w-24.5 h-11.25 rounded-r-md cursor-pointer hover:bg-Primary/70 transition-all duration-300">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="flex items-center justify-center gap-4 max-md:gap-2">
+                    <button class="cursor-pointer hover:scale-105 transition-all duration-100 max-md:size-6 md:hidden size-6">
+                    <img src="./src/img/Header/search.svg"/>
+                    </button>
+                    <button class="cursor-pointer hover:scale-105 transition-all duration-100 max-md:size-6 size-6">
+                        <img src="./src/img/Header/heart.svg"/>
+                    </button>
+                    <div class="max-md:hidden">
+                        <img src="./src/img/Header/Devider.svg"/>
+                    </div>
+                    <div class="flex gap-3 items-center justify-center">
+                        <a href="./Shopping-Cart.html" class="cursor-pointer hover:scale-105 transition-all duration-100 max-md:size-6 size-8">
+                            <img src="./src/img/Header/Cart.png"/>
+                        </a>
+                        <div class="flex flex-col justify-center gap=[7px]">
+                        <span class="text-[#4D4D4D] text-[11px]">Shopping cart:</span>
+                        <span class="text-sm font-medium">$57.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="py-4">
+            <div class="container flex justify-between">
+                <ul class="flex gap-8 max-md:hidden">
+                    <li class="flex gap-2 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="./index.html" class="text-Primary text-[14px] font-medium ">Home</a>
+                        <img src="./src/img/Header/Green-Down-Arrow.svg"/>
+                    </li>
+                    <li class="flex gap-2 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="./Shop.html" class="text-Muted text-[14px] font-medium ">Shop</a>
+                        <img src="./src/img/Header/Gray-Down-Arrow.svg"/>
+                    </li>
+                    <li class="flex gap-2 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="#" class="text-Muted text-[14px] font-medium ">Pages</a>
+                        <img src="./src/img/Header/Gray-Down-Arrow.svg"/>
+                    </li>
+                    <li class="flex gap-2 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="#" class="text-Muted text-[14px] font-medium ">Blog</a>
+                        <img src="./src/img/Header/Gray-Down-Arrow.svg"/>
+                    </li>
+                    <li class="hover:scale-95 transition-all duration-200">
+                        <a href="#" class="text-Muted text-[14px] font-medium ">About Us</a>
+                    </li>
+                    <li class="hover:scale-95 transition-all duration-200">
+                        <a href="#" class="text-Muted text-[14px] font-medium ">Contact Us</a>
+                    </li>
+                </ul>
+                     <button class="md:hidden text-Primary cursor-pointer hover:scale-95 transition-all duration-200">
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </button>
+                <div class="flex max-md:ml-auto">
+                    <button class="flex gap-[11.53px] items-center cursor-pointer hover:scale-95 transition-all duration-200">
+                        <img src="./src/img/Header/White-Phone call.svg"/>
+                        <p class="text-[#1A1A1A]  text-[14px] font-medium">(219) 555-0114</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[url(./img/Header/Breadcrumbs.png)] py-12 bg-center">
+            <div class="container">
+                <div class="flex items-center sm:gap-3 gap-1">
+                    <a href="index.html" class="cursor-pointer hover:scale-95 transition-all duration-300 max-sm:size-3">
+                        <img src="./src/img/Header/Home-Icon (2).svg"/>
+                    </a>
+                    <img src="./src/img/Header/R-Arrow.svg"/>
+                    <a href="#" class="cursor-pointer hover:scale-95 transition-all duration-300">
+                        <span class="text-[#999999] max-sm:text-xs">Account</span>
+                    </a>
+                    <img src="./src/img/Header/R-Arrow.svg"/>
+                    <a href="./User-Dashboard.html" class="cursor-pointer hover:scale-95 transition-all duration-300">
+                        <span class="text-Primary max-sm:text-xs">Dashboard</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+</header>
+</body>
