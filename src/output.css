@@ -1551,6 +1551,16 @@
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
+  .hover\:scale-9 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 9%;
+        --tw-scale-y: 9%;
+        --tw-scale-z: 9%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:scale-90 {
     &:hover {
       @media (hover: hover) {
