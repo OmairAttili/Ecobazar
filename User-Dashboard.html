@@ -136,4 +136,177 @@
             </div>
         </div>
 </header>
+<section class="user-profile">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-6 max-lg:grid-cols-1">
+            <div class="border border-[#E5E5E5] rounded-md grid lg:col-span-3 pb-3 h-104.5 max-lg:justify-center">
+                <h2 class="text-xl font-medium pl-5 pt-6 pb-4">Navigation</h2>
+                <div class="bg-[#EDF2EE] border-l-2 border-Primary">
+                    <a href="./User-Dashboard.html" class="flex items-center gap-2.5 px-5 py-4">
+                        <img src="./src/img/User-Dashboard/Dashboard.svg"/>
+                        <span>Dashboard</span>
+                    </a>
+                </div>
+                <div class="hover:bg-[#EDF2EE] hover:border-l-2 hover:border-l-Primary transition-all">
+                    <a href="./User-Dashboard.html" class="flex items-center gap-2.5 px-5 py-4">
+                        <img src="./src/img/User-Dashboard/Order History.svg"/>
+                        <span class="text-Muted">Order History</span>
+                    </a>
+                </div>
+                <div class="hover:bg-[#EDF2EE] hover:border-l-2 hover:border-l-Primary transition-all">
+                    <a href="./User-Dashboard.html" class="flex items-center gap-2.5 px-5 py-4">
+                        <img src="./src/img/User-Dashboard/Wishlist.svg"/>
+                        <span class="text-Muted">Wishlist</span>
+                    </a>
+                </div>
+                <div class="hover:bg-[#EDF2EE] hover:border-l-2 hover:border-l-Primary transition-all">
+                    <a href="./Shopping-Cart.html" class="flex items-center gap-2.5 px-5 py-4">
+                        <img src="./src/img/User-Dashboard/Shopping Cart.svg"/>
+                        <span class="text-Muted">Shopping Cart</span>
+                    </a>
+                </div>
+                <div class="hover:bg-[#EDF2EE] hover:border-l-2 hover:border-l-Primary transition-all">
+                    <a href="./User-Dashboard.html" class="flex items-center gap-2.5 px-5 py-4">
+                        <img src="./src/img/User-Dashboard/Settings.svg"/>
+                        <span class="text-Muted">Settings</span>
+                    </a>
+                </div>
+                <div class="hover:bg-[#EDF2EE] hover:border-l-2 hover:border-l-Primary transition-all">
+                    <a href="./User-Dashboard.html" class="flex items-center gap-2.5 px-5 py-4">
+                        <img src="./src/img/User-Dashboard/Log-out.svg"/>
+                        <span class="text-Muted">Log-out</span>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-9 lg:col-span-9 gap-6 max-lg:grid-cols-1">
+                <div class="grid lg:col-span-5 py-8 items-center justify-center text-center border border-[#E5E5E5] rounded-md h-69.5">
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./src/img/User-Dashboard/Dianne-Russell.png"/>
+                        <div>
+                            <h2 class="text-xl font-medium">Dianne Russell</h2>
+                            <h3 class="text-[#808080] text-sm">Customer</h3>
+                        </div>
+                        <button type="button" class="font-medium text-Primary cursor-pointer hover:text-emerald-400 duration-200 transition-all w-fit h-fit">Edit Profile</button>
+                    </div>
+                </div>
+                <div class="grid lg:col-span-4 py-8 pl-8 border border-[#E5E5E5] rounded-md h-69.5">
+                    <div class="flex flex-col gap-4.5">
+                        <span class="text-[#999999] text-sm font-medium">Billing Address</span>
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-lg font-medium">Dainne Russell</h2>
+                            <p class="text-sm text-Muted">4140 Parker Rd. Allentown, New Mexico <br/> 31134</p>
+                            <a href="mailto:outlook">dainne.ressell@gmail.com</a>
+                            <a href="#">(671) 555-0110</a>
+                        </div>
+                        <button type="button" class="font-medium text-Primary cursor-pointer hover:text-emerald-400 duration-200 transition-all w-fit h-fit">Edit Address</button>
+                    </div>
+                </div>
+                <div class="grid lg:col-span-9 col-start-1 border border-[#E5E5E5] rounded-md pt-4 pb-6 max-lg:hidden">
+                    <div class="px-6 flex justify-between items-center h-fit mb-4">
+                        <h2 class="text-xl font-medium">Recet Order History</h2>
+                         <button class="flex gap-3 items-center text-Primary cursor-pointer hover:scale-95 transition-all hover:text-Primary/65 duration-300">
+                          <span class="font-medium max-sm:text-sm">View All</span>
+                          <img src="./src/img/Categories/Arrow.svg" class="w-3.75 h-3"/>
+                         </button>
+                    </div>
+                    <table class="flex flex-col gap-3">
+                        <thead class="bg-[#F2F2F2] h-fit">
+                            <tr class="flex items-center justify-between w-[74%] pl-6">
+                                <td class="text-[#4D4D4D] text-xs font-medium uppercase">Order ID</td>
+                                <td class="text-[#4D4D4D] text-xs font-medium uppercase">Date</td>
+                                <td class="text-[#4D4D4D] text-xs font-medium uppercase">Total</td>
+                                <td class="text-[#4D4D4D] text-xs font-medium uppercase">Status</td>
+                            </tr>
+                        </thead>
+                        <tbody class="px-6">
+                            <tr class="flex justify-between py-3">
+                                <td class="text-[#333333] text-sm">#738</td>
+                                <td class="text-[#333333] text-sm pl-15">8 Sep, 2020</td>
+                                <td class="text-[#333333] text-sm font-medium">$135.00 <span class="font-normal">(5 Products)</span></td>
+                                <td class="text-[#333333] text-sm">Processing</td>
+                                <td class="text-Primary text-sm font-medium hover:scale-95 transition-all hover:text-Primary/65 duration-300"><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="flex justify-between py-3">
+                                <td class="text-[#333333] text-sm">#703</td>
+                                <td class="text-[#333333] text-sm pl-16">24 May, 2020</td>
+                                <td class="text-[#333333] text-sm font-medium pr-6">$25.00 <span class="font-normal">(1 Product)</span></td>
+                                <td class="text-[#333333] text-sm">on the way</td>
+                                <td class="text-Primary text-sm font-medium hover:scale-95 transition-all hover:text-Primary/65 duration-300"><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="flex justify-between py-3">
+                                <td class="text-[#333333] text-sm">#130</td>
+                                <td class="text-[#333333] text-sm pl-16">22 Oct, 2020</td>
+                                <td class="text-[#333333] text-sm font-medium">$250.00 <span class="font-normal">(4 Products)</span></td>
+                                <td class="text-[#333333] text-sm">Completed</td>
+                                <td class="text-Primary text-sm font-medium hover:scale-95 transition-all hover:text-Primary/65 duration-300"><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="flex justify-between py-3">
+                                <td class="text-[#333333] text-sm">#561</td>
+                                <td class="text-[#333333] text-sm pl-17">1 Feb, 2020</td>
+                                <td class="text-[#333333] text-sm font-medium">$35.00 <span class="font-normal">(1 Products)</span></td>
+                                <td class="text-[#333333] text-sm pl-4">Completed</td>
+                                <td class="text-Primary text-sm font-medium hover:scale-95 transition-all hover:text-Primary/65 duration-300"><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="flex justify-between py-3">
+                                <td class="text-[#333333] text-sm">#536</td>
+                                <td class="text-[#333333] text-sm pl-15">21 Sep, 2020</td>
+                                <td class="text-[#333333] text-sm font-medium">$578.00 <span class="font-normal">(13 Products)</span></td>
+                                <td class="text-[#333333] text-sm">Completed</td>
+                                <td class="text-Primary text-sm font-medium hover:scale-95 transition-all hover:text-Primary/65 duration-300"><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="flex justify-between py-3">
+                                <td class="text-[#333333] text-sm">#492</td>
+                                <td class="text-[#333333] text-sm pl-15">22 Oct, 2020</td>
+                                <td class="text-[#333333] text-sm font-medium">$345.00 <span class="font-normal">(7 Products)</span></td>
+                                <td class="text-[#333333] text-sm">Completed</td>
+                                <td class="text-Primary text-sm font-medium hover:scale-95 transition-all hover:text-Primary/65 duration-300"><a href="#">View Details</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="lg:hidden flex flex-col items-center">
+                    <div class="flex flex-col items-center justify-center gap-3 border border-[#E5E5E5] rounded-md pt-4 pb-6 w-full">
+                        <span class="text-Primary text-lg font-medium uppercase bg-[#F2F2F2] w-full text-center">Order ID</span>
+                        <span class="text-sm text-[#333333]">#738</span>
+                        <span class="text-[#333333]">#703</span>
+                        <span class="text-[#333333]">#130</span>
+                        <span class="text-[#333333]">#561</span>
+                        <span class="text-[#333333]">#536</span>
+                        <span class="text-[#333333]">#492</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-3 border border-[#E5E5E5] rounded-md pt-4 pb-6 w-full">
+                        <span class="text-Primary text-lg font-medium uppercase bg-[#F2F2F2] w-full text-center">Date</span>
+                        <span class="text-sm text-[#333333]">8 Sep, 2020</span>
+                        <span class="text-[#333333]">24 May, 2020</span>
+                        <span class="text-[#333333]">22 Oct, 2020</span>
+                        <span class="text-[#333333]">1 Feb, 2020</span>
+                        <span class="text-[#333333]">21 Sep, 2020</span>
+                        <span class="text-[#333333]">22 Oct, 2020</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-3 border border-[#E5E5E5] rounded-md pt-4 pb-6 w-full">
+                        <span class="text-Primary text-lg font-medium uppercase bg-[#F2F2F2] w-full text-center">Total</span>
+                        <span class="text-[#333333]">$135.00</span>
+                        <span class="text-[#333333]">$25.00</span>
+                        <span class="text-[#333333]">$250.00</span>
+                        <span class="text-[#333333]">$35.00</span>
+                        <span class="text-[#333333]">$578.00</span>
+                        <span class="text-[#333333]">$345.00</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-3 border border-[#E5E5E5] rounded-md pt-4 pb-6 w-full">
+                        <span class="text-Primary text-lg font-medium uppercase bg-[#F2F2F2] w-full text-center">Status</span>
+                        <span class="text-[#333333]">Processing</span>
+                        <span class="text-[#333333]">on the way</span>
+                        <span class="text-[#333333]">Completed</span>
+                        <span class="text-[#333333]">Completed</span>
+                        <span class="text-[#333333]">Completed</span>
+                        <span class="text-[#333333]">Completed</span>
+                    </div>
+                    <div>
+                        <a href="#" class="text-Primary font-medium hover:scale-95 transition-all hover:text-Primary/65 duration-300">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
