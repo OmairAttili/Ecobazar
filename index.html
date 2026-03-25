@@ -17,14 +17,14 @@
     <header class="Navbar">
         <div class="border-b-Muted/20 border-b pb-3">
         <div class="container">
-            <div class="flex pt-6 max-md:flex-col max-md:gap-3 items-center">
-            <div class="flex items-center justify-start">
+            <div class="flex pt-6 max-md:flex-col max-md:gap-3 items-center justify-between">
+            <div class="flex items-center">
                 <div class="flex gap-2">
                     <img src="./src/img/Header/Map Pin.svg"/>
                     <p class="text-Muted text-[12px] drop-shadow-md  max-md:text-[11px]">Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
                 </div>
             </div>
-            <div class="flex items-center ml-auto max-md:m-auto">
+            <div class="flex items-center">
                 <div class="hover:scale-95 transition-all duration-200">
                     <button class="flex gap-1.5 cursor-pointer">
                         <span class="text-Muted text-xs">Eng</span>
@@ -60,7 +60,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="flex items-center max-md:gap-2">
+                <div class="max-md:hidden flex items-center max-md:gap-2">
                     <button class="cursor-pointer hover:scale-105 transition-all duration-100 max-md:size-6 md:hidden size-6">
                     <img src="./src/img/Header/search.svg"/>
                     </button>
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-[#333333] py-[19.5px]">
+        <div class="bg-[#333333] py-5">
             <div class="container flex justify-between">
                 <ul class="flex gap-8 max-md:hidden">
                     <li class="flex gap-1 hover:scale-95 transition-all duration-200 items-center">
@@ -120,7 +120,7 @@
     </header>
     <section class="Hero">
          <div class="container grid lg:grid-cols-3 gap-12 sm:grid-cols-1"> 
-        <div class="bg-[url(./img/Hero/BannarBig.png)] flex items-center lg:col-span-2 h-147 rounded-lg bg-center bg-no-repeat bg-cover">
+        <div class="bg-[url(./img/Hero/BannarBig.png)] flex items-center lg:col-span-2 h-147 rounded-lg sm:bg-center bg-right bg-no-repeat bg-cover">
              <div class="flex flex-col gap-7 pl-12.5"> 
             <div class="w-full"> 
                 <img src="./src/img/Hero/Fresh & Healthy Organic Food.svg"/> 
@@ -170,31 +170,31 @@
         </div> 
     </section>
     <section class="Services pt-8.5 px-10">
-        <div class="container py-10 bg-white rounded-2xl shadow-xl grid lg:grid-cols-4 gap-6 justify-items-center md:grid-cols-2 sm:grid-cols-1 sm:gap-3">
-            <div class="flex gap-3 items-center max-md:flex-col text-center">
+        <div class="container py-10 bg-white rounded-2xl shadow-xl grid xl:grid-cols-4 gap-6 items-center md:grid-cols-2 sm:grid-cols-1 sm:gap-3">
+            <div class="flex justify-center gap-4 items-center max-md:flex-col max-md:text-center">
                     <img src="./src/img/Services/Shipping.svg"/>
-                <div class="max-md:flex-col text-center max-sm:gap-2">
+                <div class="max-md:flex-col max-sm:gap-2">
                     <span class="font-semibold">Free Shipping</span>
                     <p class="text-[#999999] text-sm">Free shipping on all your order</p>
                 </div>
             </div>
-            <div class="flex gap-3 items-center max-md:flex-col text-center">
+            <div class="flex gap-4 justify-center items-center max-md:flex-col max-md:text-center md:pr-6 xl:pr-0">
                     <img src="./src/img/Services/Support.svg"/>
-                <div class="max-md:flex-col text-center max-sm:gap-2">
+                <div class="max-md:flex-col max-sm:gap-2">
                     <span class="font-semibold">Customer Support 24/7</span>
                     <p class="text-[#999999] text-sm">Instant access to Support</p>
                 </div>
             </div>
-            <div class="flex gap-3 items-center max-md:flex-col text-center">
+            <div class="flex gap-4 justify-center items-center max-md:flex-col max-md:text-center">
                     <img src="./src/img/Services/Payment.svg"/>
-                <div class="max-md:flex-col text-center max-sm:gap-2">
+                <div class="max-md:flex-col max-sm:gap-2">
                     <span class="font-semibold">100% Secure Payment</span>
                     <p class="text-[#999999] text-sm">We ensure your money is save</p>
                 </div>
             </div>
-            <div class="flex gap-3 items-center max-md:flex-col text-center" md:flex-row> 
+            <div class="flex gap-4 justify-center items-center max-md:flex-col max-md:text-center"> 
                     <img src="./src/img/Services/Box.svg"/>
-                <div class="max-md:flex-col text-center max-sm:gap-2">
+                <div class="max-md:flex-col max-sm:gap-2">
                     <span class="font-semibold">Money-Back Guarantee</span>
                     <p class="text-[#999999] text-sm">30 Days Money-Back Guarantee</p>
                 </div>
@@ -205,10 +205,10 @@
         <div class="container">
             <div class="flex justify-between max-sm:px-2">
                 <h2 class="font-semibold md:text-4xl sm:text-3xl max-sm:text-lg">Popular Categories</h2>
-                <button class="flex gap-3 items-center text-Primary cursor-pointer hover:scale-95 transition-all hover:text-Primary/65 ">
+                <a href="./Shop.html" class="flex gap-3 items-center text-Primary cursor-pointer hover:scale-95 transition-all hover:text-Primary/65 ">
                     <span class="font-medium max-sm:text-sm">View All</span>
                     <img src="./src/img/Categories/Arrow.svg" class="w-3.75 h-3"/>
-                </button>
+                </a>
             </div>
             <div class="py-12.5 grid grid-cols-6 gap-6 justify-center max-xl:grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1">
                 <div class="flex flex-col items-center gap-4 border-gray-200 shadow-sm border rounded-md py-6 max-sm:w-50 max-sm:m-auto hover:border-Primary transition-all hover:scale-95">
@@ -278,39 +278,43 @@
                         <img src="./src/img/Products/Green Apple.png"/>
                         <div class="bg-Danger w-20 h-6.75 rounded-sm text-white font-medium text-[14px] flex items-center justify-center absolute top-4 left-4"><span>Sale 50%</span></div>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Apple</span>
-                        <div class="flex justify-between">
-                            <div>
-                                <span class="font-medium">$14.99</span>
-                                <span class="text-[#999999] line-through">$20.99</span>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Apple</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
+                                <div>
+                                    <span class="font-medium">$14.99</span>
+                                    <span class="text-[#999999] line-through">$20.99</span>
+                                </div>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
-                </div>
+                    </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Fresh Indian Malta.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Fresh Indian Malta</span>
-                        <div class="flex justify-between">
-                            <div>
-                                <span class="font-medium">$20.00</span>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Fresh Indian Malta</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
+                                <div>
+                                  <span class="font-medium">$20.00</span>
+                                </div>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
-                        <div class="relative flex max-sm:justify-center">
+                        <div class="relative flex items-center max-sm:justify-center">
                             <img src="./src/img/Products/Chinese cabbage.png"/>
                             <div>
                                 <div class="bg-[#F2F2F2] border border-gray-200 rounded-full w-fit p-2.5 cursor-pointer hover:scale-95 hover:border-Primary transition-all absolute top-4 right-4">
@@ -321,102 +325,102 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-Primary text-[14px] font-normal">Chinese cabbage</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-Primary sm:text-[14px] text-lg font-semibold sm:font-normal">Chinese cabbage</h2>
+                        <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$12.00</span>
-                            </div>
-                            <a href="./Product-Details.html" class="bg-Primary rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-black transition-all">
+                            <a href="./Product-Details.html" class="bg-Primary rounded-full w-10 h-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-black transition-all">
                                 <img src="./src/img/Products/White bag.svg"/>
                             </a>
                         </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
+                        <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                            <img src="./src/img/Products/Rating.png"/>
+                        </div>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Green Lettuce.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Lettuce</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Lettuce</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$9.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Eggplant.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Eggplant</span>
-                        <div class="flex justify-between">
-                            <div>
+                       <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Eggplant</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$34.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Big Potatoes.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Big Potatoes</span>
-                        <div class="flex justify-between">
-                            <div>
+                         <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Big Potatoes</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$20.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Corn.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Corn</span>
-                        <div class="flex justify-between">
-                            <div>
+                       <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Corn</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$20.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Fresh Cauliflower.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Fresh Cauliflower</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Fresh Cauliflower</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$12.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
@@ -424,35 +428,37 @@
                         <img src="./src/img/Products/Green Capsicum.png"/>
                         <div class="bg-Danger w-20 h-6.75 rounded-sm text-white font-medium text-[14px] flex items-center justify-center absolute top-4 left-4"><span>Sale 50%</span></div>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Capsicum</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Capsicum</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
+                                <div>
                                 <span class="font-medium">$9.00</span>
                                 <span class="text-[#999999] line-through">$20.00</span>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
+                            </div>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Green Chili.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Chili</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Chili</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$34.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
             </div>    
@@ -525,7 +531,7 @@
                         <button type="button" class="w-11.5 h-11.5 sm:bg-[#F2F2F2] rounded-full flex justify-center items-center cursor-pointer hover:border-Primary hover:border-2 hover:scale-95 transition-all"><img src="./src/img/Hot_Deals/Eye-icon.svg"/></button>
                     </div>
                     <div class="text-center">
-                        <span class="text-HardPrimary text-lg">Chinese cabbage</span>
+                        <h2 class="text-HardPrimary text-lg">Chinese cabbage</h2>
                         <div class="mt-2">
                             <span class="text-2xl font-medium">$12.00</span>
                             <span class="text-2xl text-[#999999] line-through">$24.00</span>
@@ -544,68 +550,68 @@
                         <div class="flex max-sm:justify-center h-60">
                             <img src="./src/img/Products/Chinese cabbage.png"/>
                         </div>
-                    <div class="px-3 py-[12.5px] relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Chinese cabbage</span>
-                        <div class="flex justify-between">
-                            <div>
+                         <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Chinese cabbage</h2>
+                        <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$12.00</span>
-                            </div>
-                            <a href="./Product-Details.html" class="bg-Primary rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-black transition-all">
+                            <a href="./Product-Details.html" class="bg-Primary rounded-full w-10 h-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-black transition-all">
                                 <img src="./src/img/Products/White bag.svg"/>
                             </a>
                         </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
+                        <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                            <img src="./src/img/Products/Rating.png"/>
+                        </div>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Products/Green Lettuce.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Lettuce</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Lettuce</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$9.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Products/Eggplant.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Eggplant</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Eggplant</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$34.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div> 
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Products/Fresh Cauliflower.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Fresh Cauliflower</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Fresh Cauliflower</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$12.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>   
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
@@ -613,86 +619,88 @@
                         <img src="./src/img/Products/Green Capsicum.png"/>
                         <div class="bg-Danger w-20 h-6.75 rounded-sm text-white font-medium text-[14px] flex items-center justify-center absolute top-4 left-4"><span>Sale 50%</span></div>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Capsicum</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Capsicum</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
+                                <div>
                                 <span class="font-medium">$9.00</span>
                                 <span class="text-[#999999] line-through">$20.00</span>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
+                            </div>
                     </div>
                 </div> 
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Products/Green Chili.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Chili</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Chili</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$34.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Products/Big Potatoes.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Big Potatoes</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Big Potatoes</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$20.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Products/Corn.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Corn</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Corn</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$20.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Hot_Deals/Red Chili.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Red Chili</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Red Chili</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$12.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>   
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
@@ -700,35 +708,37 @@
                         <img src="./src/img/Hot_Deals/Red Tomatos.png"/>
                         <div class="bg-Danger w-20 h-6.75 rounded-sm text-white font-medium text-[14px] flex items-center justify-center absolute top-4 left-4"><span>Sale 50%</span></div>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Red Tomatos</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Red Tomatos</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
+                                <div>
                                 <span class="font-medium">$9.00</span>
                                 <span class="text-[#999999] line-through">$20.00</span>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
+                            </div>
                     </div>
                 </div> 
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center h-60">
                         <img src="./src/img/Hot_Deals/Surjapur Mango.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Surjapur Mango</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Surjapur Mango</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$34.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div> 
              </div>
@@ -765,39 +775,43 @@
                         <img src="./src/img/Products/Green Apple.png"/>
                         <div class="bg-Danger w-20 h-6.75 rounded-sm text-white font-medium text-[14px] flex items-center justify-center absolute top-4 left-4"><span>Sale 50%</span></div>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Apple</span>
-                        <div class="flex justify-between">
-                            <div>
-                                <span class="font-medium">$14.99</span>
-                                <span class="text-[#999999] line-through">$20.99</span>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Apple</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
+                                <div>
+                                    <span class="font-medium">$14.99</span>
+                                    <span class="text-[#999999] line-through">$20.99</span>
+                                </div>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Fresh Indian Malta.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Fresh Indian Malta</span>
-                        <div class="flex justify-between">
-                            <div>
-                                <span class="font-medium">$20.00</span>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Fresh Indian Malta</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
+                                <div>
+                                  <span class="font-medium">$20.00</span>
+                                </div>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
-                        <div class="relative flex">
+                        <div class="relative flex max-sm:justify-center">
                             <img src="./src/img/Products/Chinese cabbage.png"/>
                             <div>
                                 <div class="bg-[#F2F2F2] border border-gray-200 rounded-full w-fit p-2.5 cursor-pointer hover:scale-95 hover:border-Primary transition-all absolute top-4 right-4">
@@ -808,51 +822,51 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="px-3 py-3 relative flex flex-col max-sm:justify-center items-start">
-                        <span class="text-Primary text-[14px] font-normal">Chinese cabbage</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-Primary sm:text-[14px] text-lg font-semibold sm:font-normal">Chinese cabbage</h2>
+                        <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$12.00</span>
-                            </div>
-                            <a href="./Product-Details.html" class="bg-Primary rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-black transition-all">
+                            <a href="./Product-Details.html" class="bg-Primary rounded-full w-10 h-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-black transition-all">
                                 <img src="./src/img/Products/White bag.svg"/>
                             </a>
                         </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
+                        <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                            <img src="./src/img/Products/Rating.png"/>
+                        </div>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Green Lettuce.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Green Lettuce</span>
-                        <div class="flex justify-between">
-                            <div>
+                    <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Green Lettuce</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$9.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
                 <div class="border border-gray-200 shadow-sm hover:border-Primary transition-all">
                     <div class="flex max-sm:justify-center">
                         <img src="./src/img/Products/Eggplant.png"/>
                     </div>
-                    <div class="px-3 py-3 relative">
-                        <span class="text-[#4D4D4D] text-[14px] font-normal">Eggplant</span>
-                        <div class="flex justify-between">
-                            <div>
+                   <div class="px-3 py-3 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
+                        <h2 class="text-[#4D4D4D] sm:text-[14px] text-lg font-semibold sm:font-normal">Eggplant</h2>
+                            <div class="flex items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:gap-3">
                                 <span class="font-medium">$34.00</span>
+                                <a href="#" class="bg-[#F2F2F2] rounded-full size-10 flex items-center justify-center cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
+                                    <img src="./src/img/Products/Bag (1).svg"/>
+                                </a>
                             </div>
-                            <div class="bg-[#F2F2F2] rounded-full w-10 h-10 flex items-center justify-center absolute top-6 right-4 cursor-pointer hover:scale-95 hover:border hover:border-Primary transition-all">
-                                <img src="./src/img/Products/Bag (1).svg"/>
+                            <div  class="flex items-center max-sm:justify-center max-sm:pt-2">
+                                <img src="./src/img/Products/Rating.png"/>
                             </div>
-                        </div>
-                        <img src="./src/img/Products/Rating.png" class="pt-1.5"/>
                     </div>
                 </div>
             </div>
