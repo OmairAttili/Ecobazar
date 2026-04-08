@@ -105,9 +105,40 @@
                         <a href="#" class="text-Muted text-[14px] font-medium ">Contact Us</a>
                     </li>
                 </ul>
-                     <button class="md:hidden text-Primary cursor-pointer hover:scale-95 transition-all duration-200 pl-6 md:pl-0">
-                        <i class="fa-solid fa-bars fa-2xl"></i>
-                    </button>
+                     <div class="drawer md:hidden w-fit pl-5">
+                  <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+                  <div class="drawer-content">
+                    <label for="my-drawer-1" class="drawer-button">
+                          <i class="fa-solid fa-bars fa-2xl"></i>
+                    </label>
+                  </div>
+                  <div class="drawer-side">
+                    <label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu bg-[#333333] text-white min-h-full p-4">
+                      <li class="flex gap-1 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="./index.html" class="text-[#999999] text-[14px] font-medium ">Home</a>
+                    </li>
+                    <li class="flex gap-1 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="./Shop.html" class="text-[#999999] text-[14px] font-medium ">Shop</a>
+                    </li>
+                    <li class="flex gap-1 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="#" class="text-[#999999] text-[14px] font-medium ">Pages</a>
+                    </li>
+                    <li class="flex gap-1 hover:scale-95 transition-all duration-200 items-center">
+                        <a href="#" class="text-[#999999]  text-[14px] font-medium ">Blog</a>
+                    </li>
+                    <li class="flex hover:scale-95 transition-all duration-200 items-center">
+                        <a href="#" class="text-[#999999]  text-[14px] font-medium ">About Us</a>
+                    </li>
+                    <li class="flex hover:scale-95 transition-all duration-200 items-center">
+                        <a href="#" class="text-[#999999]  text-[14px] font-medium ">Contact Us</a>
+                    </li>
+                    <li class="flex hover:scale-95 transition-all duration-200 items-center">
+                        <a href="Shopping-Cart.html" class="text-white"><i class="fa-solid fa-cart-shopping fa-lg mt-3"></i></a>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="flex max-md:ml-auto">
                     <button class="flex gap-[11.53px] items-center cursor-pointer hover:scale-95 transition-all duration-200 pr-6 md:pr-0">
                         <img src="./src/img/Header/White-Phone call.svg"/>
@@ -118,12 +149,12 @@
         </div>
         <div class="bg-[url(./img/Header/Breadcrumbs.png)] py-12 bg-center">
             <div class="container">
-                <div class="flex items-center sm:gap-3 gap-1 pl-6 md:pl-0">
-                    <a href="./index.html" class="cursor-pointer hover:scale-95 transition-all duration-300 max-sm:size-3">
+                <div class="flex items-center gap-3 pl-6 md:pl-0">
+                    <a href="./index.html" class="cursor-pointer hover:scale-95 transition-all duration-300">
                         <img src="./src/img/Header/Home-Icon (2).svg"/>
                     </a>
-                    <img src="./src/img/Header/R-Arrow.svg"/>
-                    <a href="./Shopping-Cart.html" class="text-Primary max-sm:text-xs cursor-pointer hover:scale-95 transition-all duration-300">
+                    <i class="fa-solid fa-chevron-right text-[#999999]"></i>
+                    <a href="./Shopping-Cart.html" class="text-Primary cursor-pointer hover:scale-95 transition-all duration-300">
                        Shopping cart
                     </a>
                 </div>
@@ -135,7 +166,7 @@
         <h2 class="font-semibold text-[32px] text-center mb-8">My Shopping Cart</h2>
         <div class="flex justify-center gap-6 max-lg:flex-col">
             <div class="flex flex-col gap-6 w-full">
-                <div class="max-sm:hidden">
+                <div class="hidden sm:block">
                     <table class="border border-[#E6E6E6] w-full">
                         <thead class="w-full flex items-center h-11.5 mb-3 border-b border-[#E6E6E6]">
                             <tr class="w-full flex justify-evenly">
@@ -219,23 +250,21 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="flex flex-col justify-center gap-4 sm:hidden">
-                    <div class="flex items-start shadow-md border rounded-md py-8 justify-between border-Muted">
+                <div class="flex flex-col justify-center gap-4 sm:hidden px-3">
+                    <div class="flex flex-col items-center shadow-md border rounded-md py-8 border-Muted relative">
+                        <button type="button" class="absolute right-5 top-5 text-Muted cursor-pointer">
+                            <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                        </button>
                         <img src="./src/img/Products/Green Capsicum (4).png"/>
-                        <div class="flex flex-col gap-4 w-full">
-                            <div class="flex items-center justify-between border-b border-gray-400 pb-3">
-                                <span class="font-medium">Green Capsicum</span>
-                                <button type="reset" class="border border-[#CCCCCC] rounded-full size-6 flex items-center justify-center mr-5 cursor-pointer hover:bg-Primary/25 duration-200 delay-100">
-                                      <i class="fa-solid fa-x fa-xs text-Muted"></i>
-                               </button>
-                            </div>
+                        <span class="font-medium">Green Capsicum</span>
+                        <div class="flex flex-col gap-4 w-full px-6 mt-6">
                             <div class="flex items-center justify-between pr-3 border-b border-gray-400 pb-3">
                                 <span class="font-medium">price :</span>
                                 <span class="font-medium">$14.00</span>
                             </div>
                             <div class="flex items-center justify-between border-b border-gray-400 pb-3">
                                 <span class="font-medium">Quantity :</span>
-                                <div class="flex items-center justify-center border border-[#E5E5E5] rounded-full h-12.5">
+                                <div class="flex items-center justify-center border border-[#E5E5E5] rounded-full h-12.5 w-31">
                                     <button class="size-8.5 rounded-full bg-[#F2F2F2] flex items-center justify-center cursor-pointer hover:bg-Primary/40 transition-all duration-200 hover:scale-95">
                                         <img src="./src/img/Product-Details/Minus.svg"/>
                                     </button>
@@ -253,22 +282,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-start shadow-md border rounded-md py-8 justify-between border-Muted">
+                    <div class="flex flex-col items-center shadow-md border rounded-md py-8 border-Muted relative">
+                        <button type="button" class="absolute right-5 top-5 text-Muted cursor-pointer">
+                            <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                        </button>
                         <img src="./src/img/Products/Red Capsicum.png"/>
-                        <div class="flex flex-col gap-4 w-full">
-                            <div class="flex items-center justify-between border-b border-gray-400 pb-3">
-                                <span class="font-medium">Red Capsicum</span>
-                                <button type="reset" class="border border-[#CCCCCC] rounded-full size-6 flex items-center justify-center mr-5 cursor-pointer hover:bg-Primary/25 duration-200 delay-100">
-                                      <i class="fa-solid fa-x fa-xs text-Muted"></i>
-                               </button>
-                            </div>
+                        <span class="font-medium">Red Capsicum</span>
+                        <div class="flex flex-col gap-4 w-full px-6 mt-6">
                             <div class="flex items-center justify-between pr-3 border-b border-gray-400 pb-3">
                                 <span class="font-medium">price :</span>
                                 <span class="font-medium">$14.00</span>
                             </div>
                             <div class="flex items-center justify-between border-b border-gray-400 pb-3">
                                 <span class="font-medium">Quantity :</span>
-                                <div class="flex items-center justify-center border border-[#E5E5E5] rounded-full h-12.5">
+                                <div class="flex items-center justify-center border border-[#E5E5E5] rounded-full h-12.5 w-31">
                                     <button class="size-8.5 rounded-full bg-[#F2F2F2] flex items-center justify-center cursor-pointer hover:bg-Primary/40 transition-all duration-200 hover:scale-95">
                                         <img src="./src/img/Product-Details/Minus.svg"/>
                                     </button>
@@ -303,7 +330,7 @@
                     <div class="border border-[#E6E6E6] rounded-full h-13 w-full">
                         <form class="pl-6 h-13 flex justify-between w-full">
                             <input placeholder="Enter code" class="outline-0 size-full"/>
-                            <button class="text-white bg-black rounded-full w-49 flex items-center justify-center font-semibold cursor-pointer hover:bg-Primary transition-all duration-500 hover:text-sm delay-75 max-sm:text-sm">Apply Coupon</button>
+                            <button class="text-white bg-black rounded-full w-50 flex items-center justify-center font-semibold cursor-pointer hover:bg-Primary transition-all duration-500 hover:text-sm delay-75 max-sm:text-xs">Apply Coupon</button>
                         </form>
                     </div>
                 </div>
@@ -328,27 +355,27 @@
                                 <span class="font-medium">$84.00</span>
                             </div>
                         </div>
-                        <a href="./Checkout.html" class="flex items-center justify-center h-12.75 rounded-full bg-Primary text-white cursor-pointer hover:bg-HardPrimary hover:scale-95 transition-all duration-500 delay-100">      
-                           Proceed to checkout
-                        </a>
+                        <div class="w-full flex items-center justify-center">
+                            <a href="./Checkout.html" class="flex items-center justify-center h-12.75 rounded-full bg-Primary text-white cursor-pointer hover:bg-HardPrimary hover:scale-95 transition-all duration-500 delay-100 w-94">      
+                               Proceed to checkout
+                            </a>
+                        </div>
                     </div>
         </div>
     </div>
 </section>
- <footer>
-            <div class="pb-15 bg-[#F7F7F7]">
-                <div class="container flex items-center justify-between max-lg:flex-col max-lg:justify-center gap-8">
+     <footer>
+            <div class="py-10 bg-[#F7F7F7]">
+                <div class="container flex items-center justify-between max-lg:flex-col max-xl:gap-8">
                 <div>
                     <h2 class="font-semibold text-2xl mb-1 max-xl:text-md max-sm:text-sm max-sm:text-center">Subcribe our Newsletter</h2>
                     <p class="text-[#999999] text-sm max-xl:text-xs max-sm:text-center">Pellentesque eu nibh eget mauris congue mattis mattis nec <br/> tellus. Phasellus imperdiet elit eu magna.</p>
                 </div>
-                <div>
-                    <form class="flex relative">
-                        <input type="email" placeholder="Your email address" class="outline-0 w-123 h-13 border border-[#E5E5E5] rounded-full pl-6 py-3.5 max-sm:text-xs max-sm:w-70"/>
-                        <button type="button" class="bg-Primary text-white w-40.5 h-13 rounded-full absolute right-0 cursor-pointer hover:opacity-85 hover:scale-95 transition-all max-sm:text-xs max-sm:w-20">Subscribe</button>
+                    <form class="flex relative items-center sm:max-w-134 w-full">
+                        <input type="email" placeholder="Your email address" class="outline-0 sm:w-123 h-13 border border-[#E5E5E5] rounded-full pl-6 py-3.5 max-sm:text-xs w-full"/>
+                        <button type="button" class="bg-Primary text-white sm:w-40.5 w-30 h-13 rounded-full absolute right-0 cursor-pointer hover:opacity-85 transition-all max-sm:text-xs">Subscribe</button>
                     </form>
-                </div>
-                <div class="flex gap-2 items-center">
+                <div class="flex gap-2 items-center w-46">
                     <a class="hover:opacity-85 transition-all" href="#"><img src="./src/img/Footer/Social Media (3).svg"/></a>
                     <a class="hover:opacity-85 transition-all" href="#"><img src="./src/img/Footer/Social Media.svg"/></a>
                     <a class="hover:opacity-85 transition-all" href="#"><img src="./src/img/Footer/Social Media (1).svg"/></a>
@@ -417,5 +444,5 @@
                     </div>
                 </div>
             </div>
- </footer>
+    </footer>
 </body>
